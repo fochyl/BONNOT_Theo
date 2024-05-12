@@ -24,7 +24,7 @@ bool is_floating(std::string const &s)
 {
     for (char value : s)
     {
-        if (!std::isdigit(value))
+        if (!std::isdigit(value) || value != '.')
         {
             return 0;
         }
