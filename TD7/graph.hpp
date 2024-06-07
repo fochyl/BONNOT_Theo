@@ -3,6 +3,8 @@
 #include <vector>
 #include <unordered_map>
 #include <utility>
+#include <stack>
+#include <queue>
 
 namespace Graph
 {
@@ -13,14 +15,9 @@ namespace Graph
 
         // default ici permet de définit les opérateurs de comparaison membres à membres automatiquement
         // Cela ne fonction qu'en C++20, si vous n'avez pas accès à cette version je vous donne les implémentations des opérateurs plus bas
-        bool WeightedGraphEdge::operator==(WeightedGraphEdge const &other) const
-        {
-            return to == other.to && weight == other.weight;
-        }
-        bool WeightedGraphEdge::operator!=(WeightedGraphEdge const &other) const
-        {
-            return !(*this == other);
-        }
+        bool WeightedGraphEdge::operator==(WeightedGraphEdge const &other) const;
+
+        bool WeightedGraphEdge::operator!=(WeightedGraphEdge const &other) const;
     };
 
     struct WeightedGraph

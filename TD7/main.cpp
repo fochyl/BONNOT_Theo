@@ -26,12 +26,12 @@ int main()
         graph2.add_vertex(from);
     }
 
-    graph2.add_undirected_edge(0, 1, 1);
-    graph2.add_undirected_edge(0, 4, 1);
-    graph2.add_undirected_edge(1, 2, 1);
-    graph2.add_undirected_edge(1, 3, 1);
-    graph2.add_undirected_edge(2, 3, 1);
-    graph2.add_undirected_edge(3, 4, 1);
+    graph2.add_directed_edge(0, 1, 1);
+    graph2.add_directed_edge(0, 4, 1);
+    graph2.add_directed_edge(1, 2, 1);
+    graph2.add_directed_edge(1, 3, 1);
+    graph2.add_directed_edge(2, 3, 1);
+    graph2.add_directed_edge(3, 4, 1);
 
     // Vérification
 
